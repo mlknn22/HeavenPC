@@ -1,0 +1,97 @@
+.button, input {
+    border: none;
+    outline: none;
+}
+.header-bottom-button:hover {
+    background-color: #ded4e6;
+}
+.search-button {
+    transition: 0.3s ease;
+    background: transparent;
+    color: #49454F;
+    height: 44px; /* Высота кнопки */
+    width: 44px; /* Ширина кнопки */
+    position: absolute; /* Позиционируем кнопку внутри поля */
+    right: 10px; /* Отступ от правого края */
+    cursor: pointer;
+    border-radius: 100%; /* Делает кнопку круглой */
+    display: flex; /* Используем Flexbox */
+    align-items: center; /* Центрируем иконку по вертикали */
+    justify-content: center; /* Центрируем иконку по горизонтали */
+    border: none; /* Убираем границу */
+    outline: none; /* Убираем обводку */
+
+    padding: 0; /* Убираем отступы */
+}
+.search-button i {
+    font-size: 18px; /* Уменьшите размер шрифта */
+}
+.search-button:hover {
+    background-color: #ded4e6;
+}
+
+.header-bottom-button {
+    transition: 0.3s ease;
+    height: 100%; /* Кнопки занимают всю высоту родителя */
+    width: 44px; /* Ширина кнопок */
+    background-color: #ece6f0; 
+    display: flex; /* Используем flexbox для центрирования иконок */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    border-radius: 10px; 
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Устанавливаем указатель на кнопку */
+}
+
+/*=======================================buttons-box=============================*/
+.selected-button {
+    margin-left: 30px;
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; /* Курсор в виде руки при наведении */
+}
+.selected .fas {
+    color: rgb(0, 0, 0); /* Цвет галочки */
+    font-size: 18px;
+    display: flex;
+}
+
+.hidden {
+    display: none; /* Скрываем галочку по умолчанию */
+}
+
+.selected.active .fas {
+    display: inline; /* Показываем галочку, когда класс active */
+}
+
+.delete-choose-goods-button {
+    border: none; /* Убирает обводку */
+    background-color: transparent;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; 
+}
+
+.registration-button {
+    background-color: #ece6f0; 
+    height: 48px;
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Устанавливаем указатель на кнопку */
+    color: #49454F;
+}
+.registration-button:hover {
+    background-color: #ded4e6;
+}
